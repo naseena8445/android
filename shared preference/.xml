@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#888E89"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="KMCT.org"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30dp"/>
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head"
+        android:layout_marginTop="25dp"
+        android:hint="User Name"
+        android:textColorHint="@color/black"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="21dp"
+        android:hint="Mobile Number"
+        android:textColorHint="@color/black"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobile"
+        android:layout_marginTop="18dp"
+        android:hint="Email Address"
+        android:textColorHint="@color/black"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Email"
+        android:layout_marginTop="21dp"
+        android:hint="Enter Password"
+        android:textColorHint="@color/black"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/repass"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="34dp"
+        android:hint="Retype Password"
+        android:textColorHint="@color/black"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/repass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:text="Submit"
+        android:backgroundTint="#454242"
+        android:textSize="15dp" />
+
+</RelativeLayout>
